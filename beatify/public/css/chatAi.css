@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    /* Preto suave para o fundo */
+    color: #e6e6e6;
+    /* Texto cinza claro para contraste */
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #1f1f1f;
+    /* Cinza escuro neutro para a navbar */
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+    /* Linha sutil para divisão */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar .logo {
+    font-size: 30px;
+    color: #ff79c6;
+    /* Rosa vibrante para destacar a logo */
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .nav-links li {
+    margin-right: 20px;
+}
+
+.navbar .nav-links a {
+    color: #e6e6e6;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a.active {
+    font-weight: bold;
+    color: #bd93f9;
+    /* Roxo claro para o link ativo */
+}
+
+.navbar .nav-links a:hover {
+    color: #ff79c6;
+    /* Rosa vibrante no hover */
+}
+
+/* Chat Section */
+.chat-container {
+    width: 90%;
+    margin: 30px auto;
+    background-color: #1e1e1e;
+    /* Fundo cinza escuro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.chat-box {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.messages {
+    flex: 1;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #292929;
+    /* Fundo para as mensagens */
+    border-radius: 8px;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 15px;
+}
+
+.message.user {
+    text-align: right;
+    color: #121212;
+    /* Texto escuro */
+    background-color: #50fa7b;
+    /* Verde vibrante para o usuário */
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 80%;
+}
+
+.message.bot {
+    text-align: left;
+    color: #e6e6e6;
+    background-color: #44475a;
+    /* Roxo escuro para mensagens do bot */
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 80%;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    resize: none;
+    background-color: #1e1e1e;
+    color: #e6e6e6;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #ff79c6;
+    /* Rosa no foco */
+}
+
+button {
+    background-color: #ff79c6;
+    /* Rosa vibrante */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff92d0;
+    /* Rosa claro no hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    /* Mesmo fundo da navbar */
+    color: #e6e6e6;
+    margin-top: 50px;
+}

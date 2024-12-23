@@ -1,0 +1,146 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #1e1e1e;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar .logo {
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .nav-links li {
+    margin-right: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a.active {
+    font-weight: bold;
+    color: #6a11cb;
+}
+
+.navbar .nav-links a:hover {
+    color: #6a11cb;
+}
+
+/* Payments Section */
+.payments {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.payments h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.payments p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.payment-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.payment-item {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.payment-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.payment-item h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #1e1e1e;
+}
+
+.payment-item p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.payment-item ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.payment-item ul li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #4a09a3;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #fff;
+    margin-top: 50px;
+    border-radius: 10px;
+}
